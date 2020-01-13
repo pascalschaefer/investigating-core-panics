@@ -1,0 +1,560 @@
+TRACE [Logger started]
+TRACE [Main] (sysname='LoPy4', nodename='LoPy4', release='1.20.1.r1-0.7.0-vanilla-dragonfly-onewire-i2s', version='daf40f36-dirty on 2019-12-04', machine='LoPy4 with ESP32', lorawan='1.0.2', sigfox='1.0.1')
+TRACE [Main] Starting Wunderkiste App
+TRACE [Main] TimeToolWK HW:WK19 FW:6 D:17.12.2019
+TRACE [Main] MAC Address: b'3C71BF885440'
+TRACE [Eventlog] Initialized event log file /flash/data/events.bin with capacity for 1000 events
+TRACE [Eventlog] > read position : 604
+TRACE [Eventlog] > write position: 692
+TRACE [Eventlog] > eventId       : 29     lastAckEventID:  0
+TRACE [LORA] Lora DevEUI is 70B3D5499DFBF4A6
+TRACE [LORA] Lora AppEUI is F03D29AC71000001
+TRACE [LORA] Lora network is already joined, re-joining anyway
+TRACE [LORA] Waiting to join LORA network
+TRACE [LORA] LORA is now joined
+TRACE [EventSender] EventSender started
+TRACE [EventSender] pending events: True
+TRACE [EventSender] Publishing event # 26  with CMD 2
+TRACE [EventSender] Handling event # 26  with CMD 2
+TRACE [LORA] Preparing to send CMD = 2 , SEQ_NO = 26
+TRACE [LORA] CMD 0x01 [NFC_DETECTED] SEQ# 26 . uid = 07000000 , ts = 19
+TRACE [LORA] > sending 11 bytes: b'011a001300000007000000'
+TRACE [Eventlog] Advanced Event ID to 30
+TRACE [LORA] < no downlink
+TRACE [LORA] (rx_timestamp=0, rssi=0, snr=0.0, sfrx=0, sftx=5, tx_trials=0, tx_power=0, tx_time_on_air=62, tx_counter=118, tx_frequency=867300000)
+TRACE [Eventlog] Added Event 30 to buffer, cmd = 2
+TRACE [Eventlog] Advanced Event ID to 31
+TRACE [Eventlog] Added Event 31 to buffer, cmd = 2
+TRACE [Eventlog] Advanced Event ID to 32
+TRACE [Eventlog] Added Event 32 to buffer, cmd = 2
+TRACE [Eventlog] Advanced Event ID to 33
+TRACE [Eventlog] Added Event 33 to buffer, cmd = 2
+TRACE [Eventlog] Advanced Event ID to 34
+TRACE [Eventlog] Added Event 34 to buffer, cmd = 2
+TRACE [Eventlog] Advanced Event ID to 35
+TRACE [Eventlog] Added Event 35 to buffer, cmd = 2
+TRACE [Eventlog] Advanced Event ID to 36
+TRACE [Eventlog] Added Event 36 to buffer, cmd = 2
+TRACE [Eventlog] Advanced Event ID to 37
+TRACE [Eventlog] Added Event 37 to buffer, cmd = 2
+TRACE [Eventlog] Advanced Event ID to 38
+TRACE [Eventlog] Added Event 38 to buffer, cmd = 2
+TRACE [Eventlog] Advanced Event ID to 39
+TRACE [Eventlog] Added Event 39 to buffer, cmd = 2
+TRACE [EventSender] pending events: True
+TRACE [EventSender] Publishing event # 27  with CMD 2
+TRACE [EventSender] Handling event # 27  with CMD 2
+TRACE [LORA] Preparing to send CMD = 2 , SEQ_NO = 27
+TRACE [LORA] CMD 0x01 [NFC_DETECTED] SEQ# 27 . uid = 08000000 , ts = 19
+TRACE [LORA] > sending 11 bytes: b'011b001300000008000000'
+TRACE [LORA] < no downlink
+TRACE [LORA] (rx_timestamp=0, rssi=0, snr=0.0, sfrx=0, sftx=5, tx_trials=0, tx_power=0, tx_time_on_air=62, tx_counter=119, tx_frequency=867500000)
+TRACE [Clock] Starting time sync
+TRACE [LORA] CMD 0x04 [TIME_REQUEST] ID# 1 . our_time = 29 (1970, 1, 1, 0, 0, 29, 3, 1)
+TRACE [LORA] > sending 7 bytes: b'0401001d000000'
+TRACE [EventSender] pending events: True
+TRACE [EventSender] Publishing event # 28  with CMD 2
+TRACE [EventSender] Handling event # 28  with CMD 2
+TRACE [LORA] < no downlink
+TRACE [LORA] (rx_timestamp=0, rssi=0, snr=0.0, sfrx=0, sftx=5, tx_trials=0, tx_power=0, tx_time_on_air=57, tx_counter=120, tx_frequency=867100000)
+TRACE [LORA] Preparing to send CMD = 2 , SEQ_NO = 28
+TRACE [LORA] CMD 0x01 [NFC_DETECTED] SEQ# 28 . uid = 09000000 , ts = 20
+TRACE [LORA] > sending 11 bytes: b'011c001400000009000000'
+TRACE [LORA] CMD 0x04 [TIME_REQUEST] ID# 2 . our_time = 37 (1970, 1, 1, 0, 0, 37, 3, 1)
+TRACE [LORA] < no downlink
+TRACE [LORA] (rx_timestamp=0, rssi=0, snr=0.0, sfrx=0, sftx=5, tx_trials=0, tx_power=0, tx_time_on_air=62, tx_counter=121, tx_frequency=867100000)
+TRACE [LORA] > sending 7 bytes: b'04020025000000'
+TRACE [LORA] < no downlink
+TRACE [LORA] (rx_timestamp=0, rssi=0, snr=0.0, sfrx=0, sftx=5, tx_trials=0, tx_power=0, tx_time_on_air=57, tx_counter=122, tx_frequency=868100000)
+TRACE [EventSender] pending events: True
+TRACE [EventSender] Publishing event # 29  with CMD 2
+TRACE [EventSender] Handling event # 29  with CMD 2
+TRACE [LORA] Preparing to send CMD = 2 , SEQ_NO = 29
+TRACE [LORA] CMD 0x01 [NFC_DETECTED] SEQ# 29 . uid = 0a000000 , ts = 21
+TRACE [LORA] > sending 11 bytes: b'011d00150000000a000000'
+TRACE [LORA] CMD 0x04 [TIME_REQUEST] ID# 3 . our_time = 48 (1970, 1, 1, 0, 0, 48, 3, 1)
+TRACE [LORA] < no downlink
+TRACE [LORA] (rx_timestamp=0, rssi=0, snr=0.0, sfrx=0, sftx=5, tx_trials=0, tx_power=0, tx_time_on_air=62, tx_counter=123, tx_frequency=868500000)
+TRACE [LORA] > sending 7 bytes: b'04030030000000'
+Guru Meditation Error: Core  1 panic'ed (Cache disabled but cached memory region accessed)
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core  1 panic'ed (IllegalInstruction). Exception was unhandled.
+Memory dump at 0x40206878: bad00bad bad00bad bad00bad
+Guru Meditation Error: Core����������������������������������������������������������������������������������������
