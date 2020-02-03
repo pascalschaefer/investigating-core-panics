@@ -22,6 +22,7 @@ class ClockController:
         self.rtc = machine.RTC()
         self.led = led
         self.blocked = False
+        self.isAlreadyRunning = False
 
     def log(self, *text):
         self.logger.log("Clock", *text)
@@ -35,11 +36,12 @@ class ClockController:
             self.eventLog.addEvent(eventlog.CMD_TIME_CHANGED, now.to_bytes(4, 'little'))
         return True
 
-    def acquireNetworkTimeThread(self, alarm):
-        self.acquireNetworkTime(None)
+    def acquireNetworkTimeThread(self, wdt):
+        self.acquireNetworkTime(wdt)
 
-    def acquireNetworkTime(self, wdt = None):
+    def acquireNetworkTime(self, wdt):
         self.log("Starting time sync")
+        self.isAlreadyRunning = True
         isClockSynced = False
         clockSyncID = 0
         sleepDuration = self.options['clock_sync_retry_interval']
@@ -48,7 +50,8 @@ class ClockController:
         if wdt != None:
             sleepMaxSeconds = (config.WDT_MAIN_TIMEOUT/1000) - 2
         while not isClockSynced:
-            if wdt != None:
+            # watchdog feed
+            if (config.WDT_MAIN_TIMEOUT > 0):
                 wdt.feed()
             self.led.error()
             try:
@@ -75,6 +78,7 @@ class ClockController:
                     # is clock synced?
                     if abs(timeDifference) < self.options['clock_accuracy']:
                         isClockSynced = True
+                        self.isAlreadyRunning = False
                         self.log("Clock is now synced to ", utime.gmtime(time.time()), "with accuracy of", abs(timeDifference), "seconds")
             
             except Exception as e:
@@ -83,7 +87,7 @@ class ClockController:
             if not isClockSynced:
                 time.sleep(sleepDuration)    
                 # sleep a little bit longer next time
-                sleepDuration = sleepDuration * sleepFactor
-                if sleepDuration > sleepMaxSeconds:
-                    sleepDuration = sleepMaxSeconds
+                #sleepDuration = sleepDuration * sleepFactor
+                #if sleepDuration > sleepMaxSeconds:
+                 #   sleepDuration = sleepMaxSeconds
 

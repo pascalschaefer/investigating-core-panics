@@ -54,14 +54,14 @@ options = {
     "uplink": "lora",
     "send_interval": 5,
     "lora_mode": "otaa",
-    "lora_app_eui": "",
-    "lora_app_key": "",
+    "lora_app_eui": "F03D29AC71000001",
+    "lora_app_key": "BBCC414FA8A0516AA3B87AA63ABF57FF",
     "lora_dev_adr": "",
     "lora_net_key": "",
     "clock_sync_retry_interval": 3,
     "clock_accuracy": 150,
     "clock_sync_interval": 25,
-    "test_event_interval": 10,
+    "test_event_interval": 30,
 }
 
 # init event log
@@ -111,33 +111,66 @@ def onNetworkTimeRequest(clockEvent):
 # setup time synchronization controller
 clockService = ClockController(options, logger, eventLog, eventSender, eventLog, led, onNetworkTimeRequest)
 
-# Timer.Alarm doesn't start a second time?
 
+test_uid = 1
+is_interrupt_add_events_triggerd = False
+is_interrupt_time_sync_triggered = False
 
 # start time synchronization 
 def timeSync(alarm):
-    clockService.acquireNetworkTimeThread(alarm)
+    print("Timer.Alarm(): Time Sync started")
+    global is_interrupt_time_sync_triggered
+    is_interrupt_time_sync_triggered = True
     Timer.Alarm(timeSync, options['clock_sync_interval'], periodic=False)
 Timer.Alarm(timeSync, options['clock_sync_interval'], periodic=False)
 
-#start adding 10 events
-test_uid = 1
-def corePanicTest(alarm):
+#adding 10 events
+def interruptAddEvents():
+    print("interruptAddEvents started")
     global test_uid   
-    for x in range(0, 10):
+    for x in range(0, 30):
+        print("interruptAddEvents for " + str(x))
         uuid_pass = test_uid.to_bytes(4, 'little')
         test_uid += 1
         eventLog.addEvent(eventlog.CMD_TAG_DETECTED, uuid_pass)
         if (config.WDT_MAIN_TIMEOUT > 0):
             wdt.feed()
+
+def corePanicTest(alarm):
+    print("Timer.Alarm(): corePanicTest started")
+    global is_interrupt_add_events_triggerd
+    is_interrupt_add_events_triggerd = True
     Timer.Alarm(corePanicTest, options['test_event_interval'], periodic=False)
 Timer.Alarm(corePanicTest, options['test_event_interval'], periodic=False)
 
+
 # start event sender
 eventSender.start()
-
+interruptAddEvents()
+#Main Loop
 while True:
+
+    # watchdog feed
     if (config.WDT_MAIN_TIMEOUT > 0):
         wdt.feed()
+    
+    # collect memory
     gc.collect()
+    
+    # sleep
     time.sleep(config.RFID_SCAN_INTERVAL)
+    
+    # Interrupt Based Code Execution via Flag for Adding Events
+    # --> Here you need to wrap your head --> once in mail loop time sync is executed
+    # even is triggered by alarm - main threat is still in clock sync
+    """if is_interrupt_add_events_triggerd:
+        is_interrupt_add_events_triggerd = False
+        interruptAddEvents()"""
+    
+    # Interrupt Based Code Execution via Flag for Time Synchronization
+    if is_interrupt_time_sync_triggered:
+        is_interrupt_time_sync_triggered = False
+        if clockService.isAlreadyRunning == False:
+            clockService.acquireNetworkTimeThread(wdt)
+        else:
+            print("> clockService.acquireNetworkTimeThread would be started, but is already running")
